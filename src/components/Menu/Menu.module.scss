@@ -1,0 +1,84 @@
+.stylesMenu {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .stylesCategoryList {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    .stylesItems {
+      cursor: pointer;
+      font-weight: 800;
+      list-style-type: none;
+      border-radius: 30px;
+      background: #F9F9F9;
+      display: inline-block;
+      padding: 12px 24px;
+
+      &_Active {
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #282828;
+      }
+    }
+  }
+
+  .stylesSort{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .stylesOpenSort{
+      rotate: 270deg;
+    }
+
+    .stylesCloseSort{
+      rotate: 90deg;
+    }
+
+    .stylesSortText{
+      display: flex;
+      gap: 6px;
+      .stylesSortTitle{
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .stylesSortSelection{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #FE5F1E;
+        border-bottom: 1px dashed #FE5F1E;
+        cursor: pointer;
+      }
+    }
+    .stylesSortMenu{
+      list-style-type: none;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.17);
+      padding: 0;
+      position: absolute;
+      top: 32px;
+      right: 0;
+
+      :hover{
+        background-color: rgba(254, 95, 30, 0.1);
+      }
+      .stylesSortMenuItem{
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 12px 16px;
+      }
+    }
+  }
+}
+
+
+
